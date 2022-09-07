@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/my_detail_page.dart';
 import 'package:get/get.dart';
-import 'content_page.dart';
-import 'my_detail_page.dart';
 import 'my_home_page.dart';
 
 //https://www.dbestech.com/tutorials/flutter-getx-app-tutorial
@@ -14,14 +13,22 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
         primarySwatch: Colors.blue,
       ),
-      home: Container(color: Colors.white,),
+      initialRoute: "/",
+      getPages: [
+        GetPage(name: "/", page: ()=> MyHomePage()),
+        GetPage(name: "/detail", page: ()=> DetailPage())
+
+        
+
+      ],
+    
     );
   }
 }

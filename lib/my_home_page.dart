@@ -72,12 +72,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
 
                       style: ElevatedButton.styleFrom(
-                        elevation: 0,
-                        primary: Color(0xFFfbc33e),
+                        elevation: 0, 
+                        backgroundColor: Color(0xFFfbc33e),
                         shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
                       ),),
-                      onPressed: ()=>Container(),
+                      onPressed: ()=>Get.to(() => ContentPage()),
                       child: Text(
                         "Get started",
                         style: TextStyle(
