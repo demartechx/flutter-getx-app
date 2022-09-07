@@ -4,6 +4,8 @@ import 'content_page.dart';
 import 'my_detail_page.dart';
 import 'my_home_page.dart';
 
+//https://www.dbestech.com/tutorials/flutter-getx-app-tutorial
+
 void main() {
   runApp(MyApp());
 }
